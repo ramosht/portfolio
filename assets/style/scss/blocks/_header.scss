@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-around;
+    }
+
+    &-texto {
+        &-linha {
+            font-size: 1.25rem;
+        }
+        
+        &-nome {
+            font-size: 3.25rem;
+            margin: .75rem 0;
+
+            @media screen and (min-width: 792px) {
+                font-size: 4rem;
+            }
+
+            @media screen and (min-width: 991px) {
+                font-size: 5rem;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 40%;
+        }
+    }
+
+    &-imagem {
+        display: none;
+        @media screen and (min-width:768px) {
+            display: block;
+        }
+        @media screen and (min-width: 792px) {
+            display: none;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 40%;
+            display: block;
+
+            &-container {
+                max-width: 20rem;
+            }
+        }
+    }
+}
