@@ -1,0 +1,13 @@
+.experiencia {
+    &-cargo {
+        margin-bottom: .5rem;
+        font-weight: 600;
+    }
+
+    &-descricao {
+        &-paragrafo {
+            line-height: 1.5rem;
+            margin-bottom: .5rem;
+        }
+    }
+}

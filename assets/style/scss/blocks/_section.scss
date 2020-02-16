@@ -1,12 +1,17 @@
+@import "../utils/variables";
+
 .section {
-    min-height: calc(100vh - 4rem);
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    &-content {
+        width: 100%;
+    }
 }
 
 .section-title {
     font-size: 2.5rem;
-    text-shadow: .1rem .1rem 0 #4DE95D;
+    text-shadow: .1rem .1rem 0 $green;
     margin-bottom: 2rem;
     text-align: center;
 }

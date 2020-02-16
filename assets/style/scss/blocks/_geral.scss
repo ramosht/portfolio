@@ -1,7 +1,12 @@
+@import "../utils/variables";
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap');
 
 html, body {
     font-family: 'Raleway', sans-serif;
+
+    &.locked {
+        overflow: hidden;
+    }
 }
 
 .d-block {
@@ -9,7 +14,7 @@ html, body {
 }
 
 .highlight {
-    text-shadow: .1rem .1rem 0 #4DE95D;
+    text-shadow: .1rem .1rem 0 $green;
 }
 
 .f-bold {
@@ -49,7 +54,7 @@ html, body {
     }
 
     .highlight {
-        text-shadow: .25rem .25rem 0 #4DE95D;
+        text-shadow: .25rem .25rem 0 $green;
     }
 }
 
