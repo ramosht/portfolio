@@ -13,20 +13,26 @@
     <div class="main">
         <aside class="sidebar">
             <ul class="sidebar-menu">
-                <li class="sidebar-menu-item active">
-                    <a href="#" class="sidebar-menu-link">Início</a>
+                <li class="sidebar-menu-item">
+                    <a href="#header" class="sidebar-menu-link">Início</a>
                 </li>
                 <li class="sidebar-menu-item">
-                    <a href="#" class="sidebar-menu-link">Sobre</a>
+                    <a href="#secaoSobre" class="sidebar-menu-link">Sobre</a>
                 </li>
                 <li class="sidebar-menu-item">
-                    <a href="#" class="sidebar-menu-link">Habilidades</a>
+                    <a href="#secaoFormacao" class="sidebar-menu-link">Formação</a>
                 </li>
                 <li class="sidebar-menu-item">
-                    <a href="#" class="sidebar-menu-link">Projetos</a>
+                    <a href="#secaoExperiencias" class="sidebar-menu-link">Experiências</a>
                 </li>
                 <li class="sidebar-menu-item">
-                    <a href="#" class="sidebar-menu-link">Contato</a>
+                    <a href="#secaoHabilidades" class="sidebar-menu-link">Habilidades</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#secaoProjetos" class="sidebar-menu-link">Projetos</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#secaoContato" class="sidebar-menu-link">Contato</a>
                 </li>
             </ul>
             <button id="toggleMenu" class="hamburger hamburger--spin" type="button">
@@ -36,11 +42,11 @@
             </button>
         </aside>
         <main class="content">
-            <section class="header container">
+            <section id="header" class="header container">
                 <div class="header-texto">
                     <span class="header-texto-linha">Olá, eu sou o</span>
                     <h1 class="header-texto-nome highlight f-bold">Guilherme <span class="d-block">Ramos</span></h1>
-                    <span class="header-texto-linha">e sou <span class="f-bold">desenvolvedor front-end pleno.</span></span>
+                    <span class="header-texto-linha">e sou <span class="f-bold">desenvolvedor front-end</span></span>
                 </div>
                 <div class="header-imagem">
                     <div class="header-imagem-container">
@@ -48,7 +54,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section about container">
+            <section id="secaoSobre" class="section about container">
                 <h2 class="section-title f-bold">Sobre mim</h2>
                 <div class="section-content about-detalhes">
                     <div class="about-detalhes-image">
@@ -75,7 +81,7 @@
                             </li>
                             <li class="dados-item">
                                 <span class="dados-item-label">Email: </span>
-                                <span class="dados-item-resposta">guilhermeht.ramos@gmail.com / guilhermeht.ramos@outlook.com</span>
+                                <span class="dados-item-resposta">contato@ramosht.com</span>
                             </li>
                             <li class="dados-item">
                                 <span class="dados-item-label">Hobbies: </span>
@@ -83,106 +89,153 @@
                             </li>
                             <li class="dados-item">
                                 <span class="dados-item-label">Frase: </span>
-                                <span class="dados-item-resposta">"O melhor momento para plantar uma árvore foi há 20 anos. O segundo melhor momento é agora.</span>
+                                <span class="dados-item-resposta">"O melhor momento para plantar uma árvore foi há 20 anos. O segundo melhor momento é agora."</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="section skills container">
+            <section id="secaoFormacao" class="section formacao container">
+                <h2 class="section-title f-bold">Formação e especialização</h2>
+                <div class="section-content">
+                    <ul class="timeline-lista">
+                        <li class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">ESAMC Sorocaba</h3>
+                                <p class="timeline-area">Bacharelado, Análise e Desenvolvimento de Sistemas</p>
+                            </div>
+                            <p class="timeline-tempo">2020 - Cursando</p>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Alura Cursos Online</h3>
+                                <p class="timeline-area">Formação SEO</p>
+                                <p class="credencial">Credencial: bc3cd464-4483-47a4-a6b5-5266c35bc4fd</p>
+                            </div>
+                            <p class="timeline-tempo">2019</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="secaoExperiencias" class="section experiencias container">
+                <h2 class="section-title f-bold">Experiências profissionais</h2>
+                <div class="section-content">
+                    <ul class="timeline-lista">
+                        <li class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">DOK Despachante</h3>
+                                <p class="timeline-area experiencia-cargo">Desenvolvedor Front-end</p>
+                                <div class="experiencia-descricao">
+                                    <p class="experiencia-descricao-paragrafo">Cuido do front-end das diversas áreas que compõem o ecossistema da empresa: sistema de checkout, sistema interno, landing pages, etc.</p>
+                                </div>
+                            </div>
+                            <p class="timeline-tempo">jul/2019 - Atualmente</p>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Cursinho do Prof. Carlão</h3>
+                                <p class="timeline-area experiencia-cargo">Professor de Informática</p>
+                                <div class="experiencia-descricao">
+                                    <p class="experiencia-descricao-paragrafo">Aulas de noções de informática para concursos públicos. As aulas cobriam Windows 7, Pacote Office 2010, noções de Rede e Internet.</p>
+                                    <p class="experiencia-descricao-paragrafo">Além das aulas, também cuidei da identidade visual (criando o logo) e das mídias sociais, criando imagens promocionais para os posts do Facebook e Instagram.</p>
+                                </div>
+                            </div>
+                            <p class="timeline-tempo">nov/2018 - jul/2019</p>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Gabi Cupcakes</h3>
+                                <p class="timeline-area experiencia-cargo">Assistente</p>
+                                <div class="experiencia-descricao">
+                                    <p class="experiencia-descricao-paragrafo">Responsável pela presença digital da empresa, criando a identidade visual da empresa (logo, fonte e cores) e realizando um trabalho de marketing no Facebook e no Instagram.</p>
+                                </div>
+                            </div>
+                            <p class="timeline-tempo">nov/2018 - jul/2019</p>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Horus Soluções e Serviços em Prevenção a Fraudes</h3>
+                                <p class="timeline-area experiencia-cargo">Atendente de Negócios</p>
+                                <div class="experiencia-descricao">
+                                    <p class="experiencia-descricao-paragrafo">Análise e prevenção de fraudes em passagens aéreas. Também trabalhei no setor de TI, auxiliando na manutenção das máquinas, manutenção do sistema e no MIS.</p>
+                                </div>
+                            </div>
+                            <p class="timeline-tempo">nov/2018 - jul/2019</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="secaoHabilidades" class="section skills container">
                 <h2 class="section-title f-bold">Habilidades</h2>
-                <div class="section-content skills-detalhes">
-                    <div class="skills-campo">
-                        <h3 class="skills-campo-title">Front-end</h3>
-                        <ul class="skills-lista">
-                            <li class="skill-item">
-                                <h4 class="skill-name">HTML5/CSS3</h4>
-                                <p class="skill-percentage">
-                                    <!-- <span class="progress-number">85%</span> -->
-                                    <span class="progress-bar" data-percentage="85"></span>
-                                </p>
+                <div class="section-content skills-detalhes"></div>
+            </section>
+            <section id="secaoProjetos" class="section projetos container">
+                <h2 class="section-title f-bold">Projetos</h2>
+                <div class="section-content projetos-detalhes">
+                    <div class="projetos-detalhes-dados">
+                        <ul class="projetos-lista">
+                            <li class="projeto">
+                                <a href="https://doutordental.com.br/" class="projeto-link" target="blank">
+                                    <div class="projeto-background" style="background-image: url('./assets/images/projetos/doutor-dental.jpg')"></div>
+                                    <div class="projeto-nome-container">
+                                        <h3 class="projeto-nome">Doutor Dental</h3>
+                                    </div>
+                                </a>
                             </li>
-                            <li class="skill-item">
-                                <h4 class="skill-name">JavaScript (ES6)</h4>
-                                <p class="skill-percentage">
-                                    <!-- <span class="progress-number">65%</span> -->
-                                    <span class="progress-bar" data-percentage="70"></span>
-                                </p>
+                            <li class="projeto">
+                                <a href="http://e-sight.mobi/" class="projeto-link" target="blank">
+                                    <div class="projeto-background" style="background-image: url('./assets/images/projetos/e-sight.jpg')"></div>
+                                    <div class="projeto-nome-container">
+                                        <h3 class="projeto-nome">E-Sight</h3>
+                                    </div>
+                                </a>
                             </li>
-                            <li class="skill-item">
-                                <h4 class="skill-name">Web Design Responsivo</h4>
-                                <p class="skill-percentage">
-                                    <!-- <span class="progress-number">65%</span> -->
-                                    <span class="progress-bar" data-percentage="80"></span>
-                                </p>
+                            <li class="projeto">
+                                <a href="" class="projeto-link" target="blank">
+                                    <div class="projeto-background" style="background-image: url('./assets/images/projetos/instituto-alpha.jpg')"></div>
+                                    <div class="projeto-nome-container">
+                                        <h3 class="projeto-nome">Instituto Alpha <small>(em breve)</small></h3>
+                                    </div>
+                                </a>
                             </li>
-                            <li class="skill-item">
-                                <h4 class="skill-name">UX/UI</h4>
-                                <p class="skill-percentage">
-                                    <!-- <span class="progress-number">65%</span> -->
-                                    <span class="progress-bar" data-percentage="60"></span>
-                                </p>
-                            </li>
-                            <li class="skill-item">
-                                <h4 class="skill-name">SCSS</h4>
-                                <p class="skill-percentage">
-                                    <!-- <span class="progress-number">65%</span> -->
-                                    <span class="progress-bar" data-percentage="85"></span>
-                                </p>
-                            </li>
-                            <li class="skill-item">
-                                <h4 class="skill-name">jQuery</h4>
-                                <p class="skill-percentage">
-                                    <!-- <span class="progress-number">65%</span> -->
-                                    <span class="progress-bar" data-percentage="60"></span>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skills-campo">
-                        <h3 class="skills-campo-title">Back-end</h3>
-                        <ul class="skills-lista">
-                            <li class="skill-item">
-                                <h4 class="skill-name">HTML5/CSS3</h4>
-                                <p class="skill-percentage">
-                                    <!-- <span class="progress-number">85%</span> -->
-                                    <span class="progress-bar" data-percentage="85"></span>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skills-campo">
-                        <h3 class="skills-campo-title">Soft skills</h3>
-                        <ul class="skills-lista">
-                            <li class="skill-item">
-                                <h4 class="skill-name">HTML5/CSS3</h4>
-                                <p class="skill-percentage">
-                                    <!-- <span class="progress-number">85%</span> -->
-                                    <span class="progress-bar" data-percentage="85"></span>
-                                </p>
+                            <li class="projeto">
+                                <a href="http://ctmarceloayres.com/" class="projeto-link" target="blank">
+                                    <div class="projeto-background" style="background-image: url('./assets/images/projetos/marcelo-ayres.jpg')"></div>
+                                    <div class="projeto-nome-container">
+                                        <h3 class="projeto-nome">C.T. Marcelo Ayres</h3>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="section contato container">
+            <section id="secaoContato" class="section contato container">
                 <div class="section-content contato-content">
                     <h2 class="contato-titulo section-title f-bold">Me manda um salve!</h2>
                     <ul class="contato-socialMedia">
-                        <li class="contato-socialMedia-item">
-                            <a href="https://www.instagram.com/ramos_ht/" target="blank" class="contato-socialMedia-link instagram">
-                                <span class="contato-socialMedia-icon">
-                                    <i class="fab fa-instagram"></i>
-                                </span>
-                                <span class="sr-only">Instagram</span>
-                            </a>
-                        </li>
                         <li class="contato-socialMedia-item">
                             <a href="https://www.linkedin.com/in/ramosht/" target="blank" class="contato-socialMedia-link linkedin">
                                 <span class="contato-socialMedia-icon">
                                     <i class="fab fa-linkedin-in"></i>
                                 </span>
                                 <span class="sr-only">Linkedin</span>
+                            </a>
+                        </li>
+                        <li class="contato-socialMedia-item">
+                            <a href="https://github.com/ramosht" target="blank" class="contato-socialMedia-link medium">
+                                <span class="contato-socialMedia-icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span class="sr-only">Github</span>
+                            </a>
+                        </li>
+                        <li class="contato-socialMedia-item">
+                            <a href="https://www.instagram.com/ramos_ht/" target="blank" class="contato-socialMedia-link instagram">
+                                <span class="contato-socialMedia-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                                <span class="sr-only">Instagram</span>
                             </a>
                         </li>
                         <li class="contato-socialMedia-item">
@@ -213,6 +266,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="assets/scripts/jquery-3.4.1.min.js"></script>
     <script src="assets/scripts/utils.js"></script>
 </body>
 </html>
