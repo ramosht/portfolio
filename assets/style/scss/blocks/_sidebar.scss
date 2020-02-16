@@ -1,3 +1,5 @@
+@import "../utils/variables";
+
 .sidebar {
     position: fixed;
     bottom: 0;
@@ -7,10 +9,12 @@
     background: #000;
     overflow: hidden;
     transition: width .5s;
+    z-index: 2;
 
     @media screen and (min-width: 1024px) {
         width: 20%;
         background: #fff;
+        transition: width 0s;
     }
 
     &.active {
@@ -33,9 +37,23 @@
         &-item {
             margin: 1rem 0;
             padding: .25rem 2rem;
+            position: relative;
+
+            &:after {
+                content: '';
+                width: 0%;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: $green;  
+                transition: width .5s;
+            }
     
             &.active {
-                border-bottom: 2px solid #4DE95D;
+                &:after {
+                     width: 100%;
+                }
             }
         }
         
@@ -56,7 +74,7 @@
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    background: #4DE95D;
+    background: $green;
     border: none;
     width: 4rem;
     height: 4rem;

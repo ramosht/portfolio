@@ -1,7 +1,10 @@
+@import "../utils/variables";
+
 .contato {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: calc(100vh - 4rem);
 
     @media screen and (min-width: 1200px) {
         &.section {
@@ -29,7 +32,7 @@
     
     &-socialMedia-link {
         color: #000;
-        /* filter: drop-shadow(.15rem .15rem 0 #4DE95D); */
+        /* filter: drop-shadow(.15rem .15rem 0 $green); */
     }
 
     &-socialMedia-icon {

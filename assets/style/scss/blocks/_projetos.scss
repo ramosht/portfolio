@@ -1,0 +1,79 @@
+@import "../utils/variables";
+
+.projetos {
+    &-detalhes {
+        width: 100%;
+    }
+
+    &-lista {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        width: 100%;
+
+        .projeto {
+            @media screen and (min-width: 1024px) {
+                width: calc(50% - 1rem);
+                padding: .5rem;
+            }
+            &-link {
+                min-height: 8rem;
+                position: relative;
+                display: flex;
+
+                text-decoration: none;
+                color: #fff;
+
+                @media screen and (min-width: 1024px) {
+                    min-height: 14rem;
+                }
+            }
+
+            &:nth-of-type(2n) {
+                .projeto-link {
+                    flex-direction: row;
+
+                    @media screen and (min-width: 1024px) {
+                        flex-direction: row-reverse;
+                    }
+                }
+            }
+
+            &:nth-of-type(2n + 1) {
+                .projeto-link {
+                    flex-direction: row-reverse;
+                }
+            }
+            
+            &-nome {
+                text-align: center;
+                
+                small {
+                    display: block;
+                    font-size: 75%;
+                }
+
+                &-container {
+                    width: 30%;
+                    background: #000;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: .5rem;
+                }
+            }
+            
+            &-background {
+                    width: 70%;
+                    background-size: cover;
+                    background-position: center;
+                    z-index: -1;
+                    filter: grayscale(1);
+            }
+        }
+    }
+}
