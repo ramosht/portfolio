@@ -6,11 +6,19 @@
 
     @media screen and (min-width: 1200px) {
         justify-content: space-around;
+
+        @media screen and (min-width: 2000px) {
+            justify-content: space-between;
+        }
     }
 
     &-texto {
         &-linha {
             font-size: 1.25rem;
+
+            @media screen and (min-width: 2000px) {
+                font-size: 1.5rem;
+            }
         }
         
         &-nome {
@@ -23,6 +31,10 @@
 
             @media screen and (min-width: 991px) {
                 font-size: 5rem;
+            }
+
+            @media screen and (min-width: 2000px) {
+                font-size: 6rem;
             }
         }
 

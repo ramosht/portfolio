@@ -53,6 +53,11 @@ html, body {
         padding-right: 6rem;
         padding-left: 6rem;
     }
+
+    @media screen and (min-width: 2000px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 .sr-only {
