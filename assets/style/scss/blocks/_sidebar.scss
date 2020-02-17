@@ -17,6 +17,15 @@
         transition: width 0s;
     }
 
+    @media screen and (min-width: 1600px) {
+        left: 10vw;
+    }
+
+    @media screen and (min-width: 2000px) {
+        left: 15vw;
+        width: 20vw;
+    }
+
     &.active {
         width: 100%;
     }
