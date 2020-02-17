@@ -4,15 +4,23 @@ const sidebar = $('.sidebar');
 
 $(hamburgerButton).click(function() {
     if($(hamburgerButton).hasClass('is-active')) {
-        $(hamburgerButton).removeClass('is-active');
-        $(sidebar).removeClass('active');
-        $('html, body').removeClass('locked');
+        closeSidebar();
     } else {
-        $(hamburgerButton).addClass('is-active');
-        $(sidebar).addClass('active');
-        $('html, body').addClass('locked');
+        openSidebar();
     }
 });
+
+function openSidebar() {
+    $(hamburgerButton).addClass('is-active');
+    $(sidebar).addClass('active');
+    $('html, body').addClass('locked');
+}
+
+function closeSidebar() {
+    $(hamburgerButton).removeClass('is-active');
+    $(sidebar).removeClass('active');
+    $('html, body').removeClass('locked');
+}
 
 // Build skills list
 const skills = [
@@ -67,10 +75,12 @@ checkPosition();
 // so we can get a fancy scroll animation
 menuItems.click(function(e){
     var href = $(this).attr("href"),
-        offsetTop = href === "#" ? 0 : $(href).offset().top-40;
+    offsetTop = href === "#" ? 0 : $(href).offset().top-40;
     $('html, body').stop().animate({ 
         scrollTop: offsetTop
     }, 300);
+    
+    closeSidebar();
     e.preventDefault();
 });
 
