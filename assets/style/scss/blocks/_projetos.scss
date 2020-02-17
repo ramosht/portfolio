@@ -15,9 +15,12 @@
         width: 100%;
 
         .projeto {
+            margin-bottom: 1rem;
+
             @media screen and (min-width: 1024px) {
                 width: calc(50% - 1rem);
                 padding: .5rem;
+                margin-bottom: 0;
             }
             &-link {
                 min-height: 8rem;
