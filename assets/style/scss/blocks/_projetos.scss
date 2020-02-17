@@ -24,6 +24,9 @@
             }
             &-link {
                 min-height: 8rem;
+                @media screen and (min-width: 792px) {
+                    min-height: 12rem;
+                }
                 position: relative;
                 display: flex;
 
